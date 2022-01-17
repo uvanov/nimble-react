@@ -7,6 +7,7 @@ import Title from "../UI/Title/Title";
 import Paragraph from "../UI/Paragraph/Paragraph";
 import List from "../UI/List/List";
 import {Swiper, SwiperSlide} from 'swiper/react';
+import 'swiper/css';
 
 import DescriptionImage from '../../media/about/description/description-image.png';
 import UsingImage from '../../media/about/using/using-image.png';
