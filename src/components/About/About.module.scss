@@ -1,0 +1,170 @@
+@import "../../styles/global.scss";
+
+.About {
+  margin-top: 160px;
+  margin-bottom: 160px;
+
+
+  .Description {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    margin-top: 173px;
+    padding: 0 70px;
+
+    @media screen and (max-width: 480px) {
+      padding: 0;
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      align-items: center;
+
+      & :last-child {
+        font-size: 18px !important;
+      }
+    }
+
+
+    .DescriptionImageStyle {
+      margin-left: -50px;
+
+      @media screen and (max-width: 615px) {
+        display: none;
+      }
+    }
+
+    .DescriptionInformation {
+      padding-top: 23px;
+
+      & :first-child {
+        margin-bottom: 57px;
+      }
+    }
+  }
+
+  .UsingBorder {
+    position: relative;
+
+    display: flex;
+    background: linear-gradient(327.01deg, #05030E 80%, #7EE8A0 133.71%);
+    border-radius: 20px;
+
+    padding: 1px;
+    margin-top: 149px;
+
+    .Using {
+      display: flex;
+      width: 100%;
+      padding: 116px 130px;
+
+      background-color: $background;
+      border-radius: 20px;
+
+      @media screen and (max-width: 580px) {
+        padding: 116px 60px;
+      }
+
+      .UsingInformation {
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+      }
+    }
+
+    .UsingImage {
+      position: absolute;
+      top: -490px;
+
+      @media screen and (max-width: 1700px) {
+        display: none;
+      }
+    }
+  }
+
+  .Staking {
+
+    .StakingHint {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+
+      padding-left: 60px;
+      padding-top: 10px;
+
+      > div::before {
+        display: inline-block;
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        margin-right: 20px;
+      }
+
+      .OrangeHint {
+        color: #D8A834;
+
+        &::before {
+          background: linear-gradient(139.33deg, #BBC423 -14.59%, #E99A3D 99.86%);
+          border-radius: 10px;
+        }
+      }
+
+      .GreenHint {
+        color: #7EE8A0;
+
+        &::before {
+          background: linear-gradient(105.56deg, #E2F685 18.43%, #8AF9AD 89.58%);
+        }
+      }
+
+    }
+
+    .StakingGraph {
+      //display: flex;
+      //align-items: flex-end;
+      //justify-content: space-between;
+
+      padding: 0 60px;
+      margin-top: -80px;
+      margin-bottom: 90px;
+
+      .StakingGraphItem{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+
+        &::before{
+          content: '';
+          display: block;
+
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: -1;
+
+          width: 159px;
+          height: 80px;
+          background: rgba(162, 220, 137, 0.4);
+          filter: blur(30px);
+        }
+
+        span{
+          display: inline-block;
+          font-weight: 500;
+          font-size: 14px;
+          color: white;
+          margin-top: 9px;
+        }
+      }
+    }
+  }
+}

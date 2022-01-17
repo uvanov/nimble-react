@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "./variables.scss";
+
+body {
+  font-family: Montserrat;
+  background: $background;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+
+* {
+  transition: .2s all;
+}
+
+img, button {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+
+// Scrollbar
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: $vertical-gradient;
+  border-radius: 12px;
+}
+
+// Selection
+
+::-moz-selection {
+  color: white;
+  background: transparentize(#8AF9AD, 0.5);
+}
+
+::selection {
+  color: white;
+  background: transparentize(#8AF9AD, 0.5);
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide:last-child {
+  margin-right: calc(100vw - 300px);
+}
+

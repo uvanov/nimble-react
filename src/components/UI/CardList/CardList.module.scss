@@ -1,0 +1,30 @@
+.CardList{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+
+  padding: 0 70px;
+
+  @media screen and (max-width: 480px) {
+    padding: 0;
+  }
+
+  :last-child{
+    justify-self: flex-end;
+  }
+
+
+  @media screen and (max-width: 1250px) {
+
+    :last-child{
+      justify-self: unset;
+    }
+
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 650px){
+    grid-template-columns: 1fr;
+  }
+
+}

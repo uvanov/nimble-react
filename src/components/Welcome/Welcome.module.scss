@@ -1,0 +1,106 @@
+.Welcome {
+  position: relative;
+  padding-top: 67px;
+
+  .WelcomeGlow {
+    position: absolute;
+
+    width: 848px;
+    height: 848px;
+
+    background: #0F3123;
+    filter: blur(270px);
+
+
+    top: -30%;
+    left: -30%;
+
+    z-index: -1;
+
+    @media screen and (max-width: 800px) {
+      top: -300px;
+      left: -500px;
+    }
+
+    @media screen and (max-width: 400px) {
+      display: none;
+    }
+
+
+  }
+
+  .WelcomeContent{
+    display: flex;
+    margin-top: 170px;
+
+    padding-left: 70px;
+
+    @media screen and (max-width: 800px){
+      padding: 0;
+    }
+  }
+
+  .ScrollHint{
+    display: block;
+    margin: 0 auto;
+    margin-top: 180px;
+  }
+
+  .SideContacts{
+    position: absolute;
+    left: -28%;
+    top: 59%;
+
+    transform: rotate(-90deg);
+
+    display: flex;
+    gap: 55px;
+
+    list-style: none;
+    margin: 0;
+
+    .SideContactsLink{
+      font-weight: 500;
+      font-size: 14px;
+      color: #8FA2A6;
+      text-decoration: none;
+
+      &:hover{
+        color: #adbfc3;
+      }
+
+      @media screen and (max-width: 1600px){
+        display: none;
+      }
+    }
+  }
+
+}
+
+.WelcomeImage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -2;
+
+  @media screen and (max-width: 1600px){
+    opacity: .3;
+  }
+
+  @media screen and (max-width: 800px){
+    opacity: 1;
+    width: 600px;
+  }
+
+  @media screen and (max-width: 575px){
+    width: 500px;
+  }
+
+  @media screen and (max-width: 496px){
+    width: 400px;
+  }
+
+  @media screen and (max-width: 400px){
+    opacity: 0;
+  }
+}

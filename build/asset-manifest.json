@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.be49e3f2.css",
+    "main.js": "/static/js/main.5b06f9fd.js",
+    "static/media/welcome-glow.png": "/static/media/welcome-glow.3e9a72a8fbbe9e5d16f6.png",
+    "static/media/using-image.png": "/static/media/using-image.8c995401611860c24128.png",
+    "static/media/welcome-image.png": "/static/media/welcome-image.327b61166a9677d3e828.png",
+    "static/media/description-image.png": "/static/media/description-image.9886d98f3eea068d3b2d.png",
+    "static/media/lottery.svg": "/static/media/lottery.a5b251db866fd82954374c53fb3413ab.svg",
+    "static/media/gain.svg": "/static/media/gain.427600add60b47f0e0519b17f2e7dc03.svg",
+    "static/media/stake.svg": "/static/media/stake.f2a264dc17d3c842113a54cddb815653.svg",
+    "static/media/tron.svg": "/static/media/tron.394797069fbf23f30f9fdc806894a749.svg",
+    "static/media/sign-in.svg": "/static/media/sign-in.57534590c1c367f534e1ca65c6664be4.svg",
+    "index.html": "/index.html",
+    "static/media/logo.svg": "/static/media/logo.05ff5c03b0db258174dbf8e4deacc528.svg",
+    "static/media/menu-icon.svg": "/static/media/menu-icon.3b7e8ed9cd881eec512bb8da3c36af70.svg",
+    "static/media/mouse.svg": "/static/media/mouse.d7bd33eee5fb14f5b98823ee6b9c27cf.svg",
+    "main.be49e3f2.css.map": "/static/css/main.be49e3f2.css.map",
+    "main.5b06f9fd.js.map": "/static/js/main.5b06f9fd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be49e3f2.css",
+    "static/js/main.5b06f9fd.js"
+  ]
+}

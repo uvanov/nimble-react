@@ -1,0 +1,85 @@
+.Card{
+  display: flex;
+
+  background: linear-gradient(139.69deg, #05030E 3.61%, #7EE8A0 114.72%);
+  border-radius: 20px;
+  padding: 1px;
+
+  width: max-content;
+
+  user-select: none;
+
+  &:hover{
+    background: linear-gradient(139.69deg, #E3F784 3.61%, #7EE8A0 114.72%);
+    box-shadow: 0px 34px 74px rgba(162, 220, 137, 0.2);
+    transform: translateY(-20px);
+
+    .CardImageWrapper{
+      border: 0;
+      background: linear-gradient(139.33deg, #BBC423 -14.59%, #E99A3D 99.86%);
+      box-shadow: 0px 14px 44px rgba(220, 152, 57, 0.6);
+
+      svg *{
+        fill: white;
+      }
+    }
+  }
+
+  margin-bottom: 50px;
+
+  .CardInner{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 52px;
+    border-radius: 20px;
+    background-color: black;
+
+    padding: 50px 50px;
+    box-sizing: border-box;
+
+
+    .CardHeader{
+      display: flex;
+      align-items: center;
+      gap: 19px;
+
+      .CardImageWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #37583C;
+        border-radius: 10px;
+
+        padding: 13px;
+      }
+
+      .CardTitle{
+        font-weight: bold;
+        font-size: 16px;
+        color: white;
+      }
+    }
+
+    .CardText{
+      color: white;
+      margin: 0;
+      font-size: 14px;
+      max-width: 160px;
+      font-weight: 500;
+      line-height: 23px;
+
+      &.small{
+        font-size: 13px;
+      }
+    }
+  }
+
+
+  &.selected{
+    background: linear-gradient(139.69deg, #E3F784 3.61%, #7EE8A0 114.72%);
+    box-shadow: 0px 34px 74px rgba(162, 220, 137, 0.2);
+    transform: translateY(-20px);
+  }
+}
